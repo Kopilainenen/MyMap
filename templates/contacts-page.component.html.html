@@ -1,0 +1,54 @@
+<div class="ContactsPage">
+	<h1 class="uk-margin-large">Контакты</h1>
+	<div class="uk-flex-middle uk-grid" uk-grid>
+		<div class="uk-width-2-3@l">
+			<img src="/assets/img/contacts-pic.jpg" alt="Космо+">
+		</div>
+		<div class="uk-width-1-3@l">
+			<div class="ContactsPage_Frame">
+				<p class="uk-margin-large-bottom">
+					<span class="uk-text-small">Режим работы:</span><br>
+					<span class="uk-text-large uk-text-bold">с 10.00 до 21.00</span><br>
+					<span class="uk-text-large">(без выходных)</span>
+				</p>
+
+				<p>
+					<a href="tel:+74992524420" class="uk-text-large uk-text-bold">+7 (499) 252 44 20</a>
+				</p>
+
+				<p>
+					<span class="uk-text-small">
+						Пишите нам в<br>
+						<span class="uk-text-bold">WhatsApp, Viber, Telegram, Messenger</span>
+					</span><br>
+					<a href="tel:+79672008800" class="uk-text-large uk-text-bold">+7 (967) 200 88 00</a>
+				</p>
+				<p>
+					<span class="uk-text-small">Кабинет директора</span><br>
+					<a href="tel:+74992550838" class="uk-text-large uk-text-bold">+7 (499) 255 08 38</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="uk-margin-xlarge-top uk-grid">
+		<section class="ContactsMap uk-width-1-1">
+			<div class="uk-width-3-4 uk-float-right uk-position-relative">
+				<div class="ContactsMap_Info">
+					<address class="ContactsMap_Info_Addr">Москва<br>ул. Климашкина, 20</address>
+					123557
+				</div>
+				<div class="ContactsMap_Image uk-margin-medium-bottom">
+					<div *ngIf="isBrowser" class="GoogleMap uk-height-1-1">
+						<agm-map class="uk-height-1-1" [latitude]="mapLat" [longitude]="mapLng" [zoom]="mapZoom">
+							<agm-marker [latitude]="markerMapLat" [longitude]="markerMapLng" [iconUrl]="markerMapImage"></agm-marker>
+						</agm-map>
+					</div>
+				</div>
+				<p>
+					На закрытой территории салона имеется <strong>наземная парковка</strong>, при въезде<br>
+					связаться с администратором по номеру <a href="tel:+79672008800" class="uk-text-bold">+7 (967) 200 88 00</a> или <a href="tel:+74992524420" class="uk-text-bold">+7 (499) 252 44 20</a>
+				</p>
+			</div>
+		</section>
+	</div>
+</div>
